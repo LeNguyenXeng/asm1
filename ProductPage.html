@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="icon" type="image/x-icon" href="/img/faviocon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .down {
+            position: absolute;
+            top: -150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header sticky top-0 bg-white shadow-md flex items-center justify-between px-8 py-02">
+        <!-- logo -->
+        <a href="/Home.html" class="ml-2 flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/img/Meubel House_Logos-05.png" class="h-8" alt="Flowbite Logo" />
+            <span class="self-center text-3xl font-bold whitespace-nowrap dark:text-white">Furniro</span>
+        </a>
+        <!-- navigation -->
+        <nav class=" ml-48 mr-6 nav font-semibold text-lg">
+            <ul class="flex items-center">
+                <li
+                    class="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
+                    <a href="">Home</a>
+                </li>
+                <li
+                    class="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                    <a href="">Shop</a>
+                </li>
+                <li
+                    class="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                    <a href="">About</a>
+                </li>
+                <li
+                    class="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- buttons --->
+        <div class="w-3/12 flex justify-end ">
+            <a href="">
+                <svg class="h-7 w-7 mr-5 hover:text-green-500 duration-200" width="24" height="24" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <line x1="19" y1="7" x2="19" y2="10" />
+                    <line x1="19" y1="14" x2="19" y2="14.01" />
+                </svg>
+            </a>
+            <a href="">
+                <svg class="h-7 w-7 mr-5 hover:text-green-500 duration-200" width="24" height="24" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+                </svg>
+            </a>
+            <a href="">
+                <svg class="h-7 w-7 mr-5 hover:text-green-500 duration-200" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+            </a>
+            <a href="">
+                <svg class="h-7 w-7 mr-5 hover:text-green-500 duration-200" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+
+                </svg>
+            </a>
+        </div>
+    </header>
+    <div class="list" style="background: #F9F1E7; width: 100%; height: 70px; position: relative;">
+        <div class="text-list"
+            style="display: flex; gap: 12px; align-items: center; padding-left: 100px; bottom: 0;right: 0; left: 0;top: 0; position: absolute;">
+            <p class="text-gray-500">Home</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M6 15L11 10L6 5L7 3L14 10L7 17L6 15Z" fill="black" />
+            </svg>
+            <p class="text-gray-500">Shop</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M6 15L11 10L6 5L7 3L14 10L7 17L6 15Z" fill="black" />
+            </svg>
+            <p class="hover:text-green-500" style="cursor: pointer;">Asgaard sofa
+            </p>
+        </div>
+    </div>
+
+
+    <div class="productpage" style="margin-left: -25px;">
+        <section class="text-gray-700 body-font overflow-hidden bg-white">
+
+            <div class="container mx-auto" style="    padding-top: 2rem; padding-bottom: 3rem;">
+
+                <div class="lg:w-4/5 mx-auto">
+
+
+                    <div class="product1 flex flex">
+                        <div class="productsmall">
+                            <img style=" background-color: #F9F1E7; border-radius: 10px;   margin-right: 90px; width: 70px; height: 55px;"
+                                class="border-gray-200" style="border-radius: 10px; background-color: #F9F1E7;"
+                                src="/img/Outdoor sofa set 2.png">
+                            <img style=" background-color: #F9F1E7; border-radius: 10px; margin-top: 15px ;  margin-right: 90px; width: 70px; height: 55px;"
+                                class="border-gray-200" style="border-radius: 10px; background-color: #F9F1E7;"
+                                src="/img/Outdoor sofa set_2 1.png">
+                            <img style=" background-color: #F9F1E7; border-radius: 10px;  margin-top: 15px;  margin-right: 90px; width: 70px; height: 55px;"
+                                class="border-gray-200" style="border-radius: 10px; background-color: #F9F1E7;"
+                                src="/img/Stuart sofa 1.png">
+                            <img style=" background-color: #F9F1E7; border-radius: 10px;  margin-top: 15px;  margin-right: 90px; width: 70px; height: 55px;"
+                                class="border-gray-200" style="border-radius: 10px; background-color: #F9F1E7;"
+                                src="/img/Maya sofa three seater (1) 1.png">
+                        </div>
+                        <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center border-gray-200"
+                            style="border-radius: 10px; background-color: #F9F1E7;" src="/img/Asgaard sofa 3.png">
+
+
+                        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                            <h2 class="text-gray-900 text-4xl title-font font-medium mb-1">Asgaard sofa</h2>
+                            <h1 class="text-xl text-gray-500 title-font tracking-widest"
+                                style="margin-top: 10px; margin-bottom: 17px;">25.000.000đ</h1>
+                            <div class="flex mb-4">
+                                <span class="flex items-center" style="gap: 2px;">
+                                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-yellow-500"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-yellow-500"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-yellow-500"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-yellow-500"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-yellow-500"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200">
+                                    <p class="text-gray-400">5 Customer Review</p>
+                                </span>
+                            </div>
+                            <p class="leading-relaxed">Setting the bar as one of the loudest speakers in its class, the
+                                Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear
+                                midrange and extended highs for a sound. </p>
+                            <div class="flex mt-6 items-center mb-5">
+
+                                <div class="color">
+                                    <div class="mb-4">
+                                        <span class="font-medium text-gray-500">Size</span>
+                                        <div class="flex items-center mt-2">
+                                            <button
+                                                style="border-radius: 5px; background: var(--Primary, #B88E2F); width: 30px; height: 30px; font-size: 13px; font-style: normal; font-weight: 400;"
+                                                class=" hover:text-green-500 text-white rounded-full  mr-2 hover:bg-red-400">L</button>
+                                            <button
+                                                style="border-radius: 5px; background: #F9F1E7; width: 30px; height: 30px; font-size: 13px; font-style: normal; font-weight: 400;"
+                                                class=" hover:text-green-500 text-black rounded-full  mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">XL</button>
+                                            <button
+                                                style="border-radius: 5px; background: #F9F1E7; width: 30px; height: 30px; font-size: 13px; font-style: normal; font-weight: 400;"
+                                                class=" hover:text-green-500 text-black rounded-full  mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">XS</button>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <span class="font-medium text-gray-500">Color</span>
+                                        <div class="alo flex items-center mt-2">
+                                            <button style="background: #816DFA;"
+                                                class="w-6 h-6 rounded-full mr-2"></button>
+                                            <button style="background: #000;"
+                                                class="w-6 h-6 rounded-full  mr-2"></button>
+                                            <button style="background: var(--Primary, #B88E2F);"
+                                                class="w-6 h-6 rounded-full mr-2"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex">
+                                <div class="hover:bg-black hover:text-white inline-flex items-center"
+                                    style="border-radius: 10px; border: 1px solid #9F9F9F; height: 58px; width: 120px;">
+                                    <button class=" disabled:opacity-50 inline-flex items-center  py-1"
+                                        style="padding-left: 12px; padding-right: 0.5rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M20 12H4" />
+                                        </svg>
+                                    </button>
+                                    <div
+                                        class="hover:text-white text-gray-600  inline-flex items-center px-4 py-1 select-none">
+                                        2
+                                    </div>
+                                    <button
+                                        class=" disabled:opacity-50 inline-flex items-center px-2 py-1 border-gray-200">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 4v16m8-8H4" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class=" hover:bg-black hover:text-white inline-flex items-center"
+                                    style="border-radius: 10px; border: 1px solid #000; height: 58px; width: 190px; margin-left: 18px;">
+                                    <button style="margin: 0 auto;">Add To Cart</button>
+
+                                </div>
+                                <div class="hover:bg-black hover:text-white inline-flex items-center"
+                                    style="border-radius: 10px; border: 1px solid black; height: 58px; width: 190px; margin-left: 18px;">
+                                    <button name="compera" style="margin: 0 auto; ">+ Compare</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-product border-t-2 mt-2" style="margin-left: 61% ;">
+                        <div class="sku mt-4"
+                            style="display: grid; grid-template-columns: 120px 10px auto; align-items: center; gap: 10px;  margin-bottom: 10px;">
+                            <p class="text-sm font-medium text-gray-400 dark:text-white">SKU</p>
+                            <p class="text-sm font-medium text-gray-400 dark:text-white">:</p>
+                            <p class="text-sm font-medium text-gray-400 dark:text-white">SS001</p>
+                        </div>
+                        <div class="sku"
+                            style="display: grid; grid-template-columns: 120px 10px auto; align-items: center; gap: 10px;  margin-bottom: 10px;">
+                            <p class="text-sm font-medium text-gray-400 dark:text-white">Category</p>
+                            <p class="text-sm font-medium text-gray-400 dark:text-white">:</p>
+                            <p class="text-sm font-medium text-gray-400 dark:text-white">Sofas</p>
+                        </div>
+                        <div class="sku"
+                            style="display: grid; grid-template-columns: 120px 10px auto; align-items: center; gap: 10px;  margin-bottom: 5px;">
+                            <p class="text-sm font-medium text-gray-400 dark:text-white">Tags</p>
+                            <p class="text-sm font-medium text-gray-400 dark:text-white">:</p>
+                            <p class="text-sm font-medium text-gray-400 dark:text-white">Sofa, Chair, Home, Shop</p>
+                        </div>
+                        <div class="sku"
+                            style="display: grid; grid-template-columns: 120px 10px auto; align-items: center; gap: 10px;  margin-top: 10px;">
+                            <p class="text-sm font-medium text-gray-400 dark:text-white">Share</p>
+                            <p class="text-sm font-medium text-gray-400 dark:text-white">:</p>
+                            <p style="display: flex; gap: 15px;"
+                                class="text-sm font-medium text-gray-400 dark:text-white"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_1_336)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 10.0558C0 15.0275 3.61083 19.1617 8.33333 20V12.7775H5.83333V10H8.33333V7.7775C8.33333 5.2775 9.94417 3.88917 12.2225 3.88917C12.9442 3.88917 13.7225 4 14.4442 4.11083V6.66667H13.1667C11.9442 6.66667 11.6667 7.2775 11.6667 8.05583V10H14.3333L13.8892 12.7775H11.6667V20C16.3892 19.1617 20 15.0283 20 10.0558C20 4.525 15.5 0 10 0C4.5 0 0 4.525 0 10.0558Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_336">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_1_340)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.833313 2.36498C0.833313 1.95876 0.994685 1.56917 1.28193 1.28193C1.56917 0.994687 1.95876 0.833315 2.36498 0.833315H17.6333C17.8346 0.832986 18.034 0.872367 18.2201 0.949204C18.4062 1.02604 18.5753 1.13882 18.7177 1.2811C18.8601 1.42337 18.9731 1.59233 19.0501 1.77832C19.1272 1.96431 19.1668 2.16367 19.1666 2.36498V17.6333C19.1669 17.8347 19.1274 18.0341 19.0505 18.2202C18.9735 18.4062 18.8607 18.5753 18.7183 18.7177C18.576 18.8602 18.407 18.9731 18.2209 19.0501C18.0349 19.1272 17.8355 19.1668 17.6341 19.1666H2.36498C2.16377 19.1666 1.96453 19.127 1.77864 19.05C1.59276 18.973 1.42387 18.8601 1.28163 18.7177C1.13939 18.5754 1.02659 18.4065 0.949665 18.2205C0.872741 18.0346 0.833204 17.8354 0.833313 17.6341V2.36498ZM8.08998 7.82332H10.5725V9.06998C10.9308 8.35332 11.8475 7.70832 13.225 7.70832C15.8658 7.70832 16.4916 9.13582 16.4916 11.755V16.6066H13.8191V12.3516C13.8191 10.86 13.4608 10.0183 12.5508 10.0183C11.2883 10.0183 10.7633 10.9258 10.7633 12.3516V16.6066H8.08998V7.82332ZM3.50665 16.4925H6.17998V7.70832H3.50665V16.4916V16.4925ZM6.56248 4.84332C6.56752 5.07221 6.52679 5.2998 6.44268 5.51274C6.35857 5.72568 6.23277 5.91968 6.07267 6.08334C5.91257 6.24701 5.7214 6.37704 5.51036 6.46582C5.29932 6.5546 5.07268 6.60033 4.84373 6.60033C4.61478 6.60033 4.38814 6.5546 4.1771 6.46582C3.96606 6.37704 3.77489 6.24701 3.61479 6.08334C3.45469 5.91968 3.32889 5.72568 3.24478 5.51274C3.16067 5.2998 3.11994 5.07221 3.12498 4.84332C3.13487 4.39403 3.3203 3.96647 3.64155 3.65222C3.9628 3.33797 4.39433 3.162 4.84373 3.162C5.29313 3.162 5.72466 3.33797 6.04591 3.65222C6.36716 3.96647 6.55259 4.39403 6.56248 4.84332Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_340">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 25 25"
+                                    fill="none">
+                                    <path
+                                        d="M12.5 1.5625C6.45996 1.5625 1.5625 6.45996 1.5625 12.5C1.5625 18.54 6.45996 23.4375 12.5 23.4375C18.54 23.4375 23.4375 18.54 23.4375 12.5C23.4375 6.45996 18.54 1.5625 12.5 1.5625ZM17.7563 9.80713C17.7637 9.92188 17.7637 10.0415 17.7637 10.1587C17.7637 13.7427 15.0342 17.8711 10.0464 17.8711C8.5083 17.8711 7.08252 17.4243 5.88135 16.6553C6.10107 16.6797 6.31104 16.6895 6.53565 16.6895C7.80518 16.6895 8.97217 16.2598 9.90234 15.5322C8.71094 15.5078 7.70996 14.7266 7.36816 13.6523C7.78564 13.7134 8.16162 13.7134 8.59131 13.6035C7.97785 13.4789 7.42645 13.1457 7.0308 12.6606C6.63515 12.1755 6.41964 11.5684 6.4209 10.9424V10.9082C6.77979 11.1108 7.20215 11.2354 7.64404 11.2524C7.27256 11.0049 6.96792 10.6695 6.75711 10.276C6.5463 9.88244 6.43585 9.443 6.43555 8.99658C6.43555 8.49121 6.56738 8.02979 6.8042 7.62939C7.48511 8.46762 8.33479 9.15318 9.29801 9.64152C10.2612 10.1299 11.3164 10.41 12.395 10.4639C12.0117 8.62061 13.3887 7.12891 15.0439 7.12891C15.8252 7.12891 16.5283 7.45605 17.0239 7.9834C17.6367 7.86865 18.2227 7.63916 18.7451 7.33154C18.5425 7.95898 18.1177 8.48877 17.5537 8.82324C18.1006 8.76465 18.6279 8.61328 19.1162 8.40088C18.7476 8.94287 18.2861 9.42383 17.7563 9.80713Z"
+                                        fill="black" />
+                                </svg>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <hr>
+    <div class="title">
+        <div class="title-text flex gap-20 justify-center mt-9">
+            <p class="text-xl font-medium text-gray-900 dark:text-white">Description</p>
+            <p class="text-xl font-medium text-gray-400 dark:text-white">Additional Information</p>
+            <p class="text-xl font-medium text-gray-400 dark:text-white">Reviews [5]</p>
+        </div>
+
+        <div class="textContent" style="display: flex; justify-content: center;">
+            <div style="text-align: left;">
+                <p class="mt-6 text-sm font-normal text-gray-400 dark:text-white">
+                    Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes
+                    the unmistakable look and
+                    <br> sound of Marshall, unplugs the chords, and takes the show on the road.
+                </p>
+                <p class="mt-6 text-sm font-normal text-gray-400 dark:text-white">
+                    Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering.
+                    Setting the bar as one of the loudest
+                    <br> speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio
+                    which boasts a clear midrange
+                    <br> and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow
+                    you to fine-tune the controls
+                    <br> to your personal preferences while the guitar-influenced leather strap enables easy and stylish
+                    travel.
+                </p>
+            </div>
+        </div>
+        <div class="image flex gap-10 justify-center mt-7">
+            <div style="width: 600px; height: 350px; background-color: #F9F1E7;" class="image1 rounded-xl">
+                <img style="width: 100%; height: 100%;" src="/img/Cloud sofa three seater + ottoman_2 1.png" alt="">
+            </div>
+            <div style="width: 600px; height: 350px; background-color: #F9F1E7;" class="image1 rounded-xl">
+                <img style="width: 100%; height: 100%;" src="/img/Cloud sofa three seater + ottoman_1 1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="mt-14">
+    <div class="title">
+        <div class="title-text flex gap-20 justify-center mt-12">
+            <p class="text-3xl font-bold text-gray-900 dark:text-white">Related Products</p>
+        </div>
+        <div class="new mt-10 mb-20">
+            <div class="max-w-screen-xl mx-auto" style="max-width: 1365px;">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+                    <!-- CARD 1 -->
+                    <div class="rounded overflow-hidden flex flex-col group relative">
+                        <div class="relative">
+                            <a href="/ProductPage.html">
+                                <img class="w-full" src="/img/image 1.png" alt="Sunset in the mountains" />
+                                <div
+                                    class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50">
+                                </div>
+                            </a>
+
+                            <a href="#!">
+                                <div style="border-radius: 68px; background-color: #ff3e3e;"
+                                    class="text-xs absolute top-0 right-0 bg-indigo-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    -30%
+                                </div>
+                            </a>
+
+                            <div
+                                class="absolute left-1/2 transform -translate-x-1/2 -bottom-60 group-hover:bottom-4 bg-white w-9/12 p-3 mx-auto transition-all duration-300">
+                                <div class="text-center">
+                                    <h3 style="color: var(--Primary, #B88E2F);" class="text-base font-bold">Add to cart
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-4 py-7 mb-1" style="background: var(--Color-Light-BG, #F4F5F7);">
+                            <a href="/ProductPage.html"
+                                class="font-bold text-2xl inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2">Syltherine</a>
+                            <p class="text-gray-500 text-sm">Stylish cafe chair</p>
+                            <del class="text-gray-400 text-sm mt-2">3.500.000đ</del>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 2 -->
+                    <div class="rounded overflow-hidden flex flex-col group relative">
+                        <div class="relative">
+                            <a href="/ProductPage.html">
+                                <img class="w-full transition-opacity duration-300" src="/img/image 2.png"
+                                    alt="Sunset in the mountains" />
+                                <div
+                                    class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50">
+                                </div>
+                            </a>
+
+                            <a href="#!">
+                                <div style="border-radius: 68px; background-color: #ff3e3e;"
+                                    class="text-xs absolute top-0 right-0 bg-indigo-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    -30%
+                                </div>
+                            </a>
+
+                            <div
+                                class="absolute left-1/2 transform -translate-x-1/2 -bottom-60 group-hover:bottom-4 bg-white w-9/12 p-3 mx-auto transition-all duration-300">
+                                <div class="text-center">
+                                    <h3 style="color: var(--Primary, #B88E2F);" class="text-base font-bold">Add to cart
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-4 py-7 mb-1" style="background: var(--Color-Light-BG, #F4F5F7);">
+                            <a href="/ProductPage.html"
+                                class="font-bold text-2xl inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2">Leviosa</a>
+                            <p class="text-gray-500 text-sm">Stylish cafe chair</p>
+                            <del class="text-gray-600 font-medium mt-2">14.000.000đ</del>
+                        </div>
+                    </div>
+
+
+
+                    <!-- CARD 3 -->
+                    <div class="rounded overflow-hidden flex flex-col group relative">
+                        <div class="relative">
+                            <a href="/ProductPage.html">
+                                <img class="w-full" src="/img/image 3.png" alt="Sunset in the mountains" />
+                                <div
+                                    class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50">
+                                </div>
+                            </a>
+
+                            <a href="#!">
+                                <div style="border-radius: 68px; background-color: #ff3e3e;"
+                                    class="text-xs absolute top-0 right-0 bg-indigo-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    -50%
+                                </div>
+                            </a>
+
+                            <div
+                                class="absolute left-1/2 transform -translate-x-1/2 -bottom-60 group-hover:bottom-4 bg-white w-9/12 p-3 mx-auto transition-all duration-300">
+                                <div class="text-center">
+                                    <h3 style="color: var(--Primary, #B88E2F);" class="text-base font-bold">Add to cart
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-4 py-7 mb-1" style="background: var(--Color-Light-BG, #F4F5F7);">
+                            <a href="/ProductPage.html"
+                                class="font-bold text-2xl inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2">Lolito</a>
+                            <p class="text-gray-500 text-sm">Luxury big sofa</p>
+                            <del class="text-gray-400 text-sm mt-2">14.000.000đ</del>
+                        </div>
+                    </div>
+
+
+                    <div class="rounded overflow-hidden flex flex-col group relative">
+                        <div class="relative">
+                            <a href="/ProductPage.html">
+                                <img class="w-full" src="/img/image 4.png" alt="Sunset in the mountains" />
+                                <div
+                                    class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50">
+                                </div>
+                            </a>
+
+                            <a href="#!">
+                                <div style="border-radius: 68px; background-color: #2EC1AC;"
+                                    class="text-xs absolute top-0 right-0 bg-indigo-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    New
+                                </div>
+                            </a>
+
+                            <div
+                                class="absolute left-1/2 transform -translate-x-1/2 -bottom-60 group-hover:bottom-4 bg-white w-9/12 p-3 mx-auto transition-all duration-300">
+                                <div class="text-center">
+                                    <h3 style="color: var(--Primary, #B88E2F);" class="text-base font-bold">Add to cart
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-4 py-7 mb-1" style="background: var(--Color-Light-BG, #F4F5F7);">
+                            <a href="/ProductPage.html"
+                                class="font-bold text-2xl inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2">Respira</a>
+                            <p class="text-gray-500 text-sm">Outdoor bar table and stool</p>
+                            <del class="text-gray-600 font-medium mt-2">5.000.000đ</del>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-10">
+                <button type="button" style="width: 245px; height: 48px; border: 1px solid var(--Primary, #B88E2F);"
+                    class=" text-yellow-600 hover:text-white border hover:bg-yellow-700  font-medium text-sm px-5 py-2.5"><a href="/Home.html">
+                    Show More
+                </a></button>
+            </div>
+        </div>
+
+        <hr>
+        <footer class="w-full">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <!--Grid-->
+                <div
+                    class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 gap-y-8 md:gap-8 py-10 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
+                    <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
+                        <a href="" class="flex justify-center lg:justify-start">
+                            <span
+                                class="self-center text-3xl font-bold whitespace-nowrap dark:text-white">Furniro.</span>
+
+                        </a>
+                        <p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">400 University Drive
+                            Suite 200 Coral Gables,<br>
+                            FL 33134 USA</p>
+                    </div>
+                    <!--End Col-->
+                    <div class="lg:mx-auto text-left ">
+                        <h4 class="text-lg text-gray-400 font-medium mb-7">Links</h4>
+                        <ul class="text-sm  transition-all duration-500">
+                            <li class="mb-6"><a href="javascript:;"
+                                    class="text-gray-900 hover:text-gray-900, font-medium mb-7">Home</a></li>
+                            <li class="mb-6"><a href="javascript:;"
+                                    class="text-gray-900 hover:text-gray-900, font-medium mb-7">Shop</a></li>
+                            <li class="mb-6"><a href="javascript:;"
+                                    class="text-gray-900 hover:text-gray-900, font-medium mb-7">About</a></li>
+                            <li class="mb-6"><a href="javascript:;"
+                                    class="text-gray-900 hover:text-gray-900, font-medium mb-7">Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <!--End Col-->
+                    <div class="lg:mx-auto text-left ">
+                        <h4 class="text-lg text-gray-400 font-medium mb-7">Help</h4>
+                        <ul class="text-sm  transition-all duration-500">
+                            <li class="mb-6"><a href="javascript:;"
+                                    class="text-gray-900 hover:text-gray-900, font-medium mb-7">Payment Options</a></li>
+                            <li class="mb-6"><a href="javascript:;"
+                                    class="text-gray-900 hover:text-gray-900, font-medium mb-7">Returns</a></li>
+                            <li class="mb-6"><a href="javascript:;"
+                                    class="text-gray-900 hover:text-gray-900, font-medium mb-7">Privacy Policies</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--End Col-->
+                    <div class="lg:mx-auto text-left ">
+                        <h4 class="text-lg text-gray-400 font-medium mb-7">Newsletter</h4>
+                        <div class="button" style="display: flex;">
+                            <input style="border-bottom: 1px solid black; font-size: 15px;" type="email"
+                                placeholder="Enter Your Email Address" required>
+                            <button class="font-medium"
+                                style="border-bottom: 1px solid black; margin-left: 15px;">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid-->
+                <div class="py-7 border-t border-gray-200">
+                    <div class="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
+                        <span class="text-sm text-gray-900 ">2023 furino. All rights reverved</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>
